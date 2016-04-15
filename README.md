@@ -1,7 +1,7 @@
 # Linux Lite Control Center applet
 
-Designed for use on the [Linux Lite](https://linuxliteos.com/). This applet is
-meant as a quick way to launch the [Linux Lite Control Center](https://github.com/linuxlite/litecontrolcenter).
+Designed for use on the [Linux Lite](https://linuxliteos.com/) Distro. This 
+applet is meant as a quick way to launch the [Linux Lite Control Center](https://github.com/linuxlite/litecontrolcenter).
 
 
 ## Depends
