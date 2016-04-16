@@ -1,5 +1,6 @@
 src/debian/files
 src/debian/lite-controlcenter-applet/*
+*.Debian.gz
 *.log
 *.substvars
 *.tar.bz2

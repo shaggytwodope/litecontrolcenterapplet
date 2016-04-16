@@ -11,7 +11,9 @@ binary-arch:
 	dh_installdirs
 	dh_install liblitecontrolcenter.so /usr/lib/*/xfce4/panel/plugins/
 	dh_install litecontrolcenter.desktop /usr/share/xfce4/panel/plugins/
-	dh_install  debian/copyright /usr/share/doc/lite-controlcenter-applet
+	dh_install debian/copyright /usr/share/doc/lite-controlcenter-applet
+	gzip -c --best debian/changelog >debian/changelog.Debian.gz
+	dh_install  debian/changelog.Debian.gz /usr/share/doc/lite-controlcenter-applet
 	dh_strip
 	dh_compress
 	dh_fixperms
