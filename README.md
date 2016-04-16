@@ -1,4 +1,7 @@
-# Linux Lite Control Center applet
+Linux Lite Control Center Applet [![Build Status][BS img]][Build Status]
+=================
+[Build Status]: https://travis-ci.org/shaggytwodope/litecontrolcenterapplet
+[BS img]: https://api.travis-ci.org/shaggytwodope/litecontrolcenterapplet.png
 
 Designed for use on the [Linux Lite](https://linuxliteos.com/) Distro. This 
 applet is meant as a quick way to launch the [Linux Lite Control Center](https://github.com/linuxlite/litecontrolcenter).
