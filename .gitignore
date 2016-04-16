@@ -1,0 +1,17 @@
+src/debian/lite-controlcenter-applet/*
+*.log
+*.substvars
+*.tar.bz2
+*.orig.tar.gz
+*.debian.tar.gz
+*.dsc
+*.build
+*.changes
+*.deb
+*.tar.gz
+*.tar.xz
+*.o
+*.ko
+*.obj
+*.elf
+*.so
