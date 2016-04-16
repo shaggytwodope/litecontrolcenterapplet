@@ -1,4 +1,4 @@
-src/debin/files
+src/debian/files
 src/debian/lite-controlcenter-applet/*
 *.log
 *.substvars
