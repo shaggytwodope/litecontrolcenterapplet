@@ -4,8 +4,9 @@ TARGET = litecontrolcenter
 liblitecontrolcenter.so:
 	gcc -Wall -shared -o liblitecontrolcenter.so -fPIC litecontrolcenter.c `pkg-config --cflags --libs $(PACKAGES)`
 
+clean:
+	-@rm *.so
 
-
-.PHONY: deps
+.PHONY: clean
 
 all: liblitecontrolcenter.so litecontrolcenter.desktop
