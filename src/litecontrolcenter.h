@@ -1,8 +1,8 @@
-/*  
- * Copyright © 2016 Johnathan "Shaggytwodope" Jenkins <twodopeshaggy@gmail.com>
- *
- * Distributed under terms of the GPL2 license.
- */
+/*
+* Copyright © 2016 Johnathan "Shaggytwodope" Jenkins <twodopeshaggy@gmail.com>
+*
+* Distributed under terms of the GPL2 license.
+*/
 
 #ifndef __XFCE_LITECONTROLCENTER_PLUGIN_H__
 #define __XFCE_LITECONTROLCENTER_PLUGIN_H__
@@ -15,12 +15,12 @@ G_BEGIN_DECLS
 
 typedef struct _LitecontrolcenterPlugin
 {
-    XfcePanelPlugin *plugin;
+  XfcePanelPlugin *plugin;
 
-    GtkWidget       *button;
-    GtkWidget       *icon;
+  GtkWidget       *button;
+  GtkWidget       *icon;
 
-    gchar           *icon_name;
+  gchar           *icon_name;
 }
 LitecontrolcenterPlugin;
 

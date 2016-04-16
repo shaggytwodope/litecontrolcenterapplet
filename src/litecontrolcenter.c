@@ -1,8 +1,8 @@
 /*
- * Copyright © 2016 Johnathan "Shaggytwodope" Jenkins <twodopeshaggy@gmail.com>
- *
- * Distributed under terms of the GPL2 license.
- */
+* Copyright © 2016 Johnathan "Shaggytwodope" Jenkins <twodopeshaggy@gmail.com>
+*
+* Distributed under terms of the GPL2 license.
+*/
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
@@ -19,20 +19,20 @@
 
 
 #ifdef LIBXFCE4PANEL_CHECK_VERSION
-  #if LIBXFCE4PANEL_CHECK_VERSION(4,9,0)
-    #define HAS_PANEL_49
-  #endif
+#if LIBXFCE4PANEL_CHECK_VERSION(4,9,0)
+#define HAS_PANEL_49
+#endif
 #endif
 
 
 static void button_clicked(GtkWidget *button, LitecontrolcenterPlugin *litecontrolcenter)
 {
-    GError *error = NULL;
-    g_spawn_command_line_async(DEFAULT_RUN_COMMAND, &error);
-    if (error != NULL)
-     {
-       g_warning("unable to launch: %s", error->message);
-     }
+  GError *error = NULL;
+  g_spawn_command_line_async(DEFAULT_RUN_COMMAND, &error);
+  if (error != NULL)
+  {
+    g_warning("unable to launch: %s", error->message);
+  }
 }
 
 
@@ -65,11 +65,11 @@ static void litecontrolcenter_free(XfcePanelPlugin *plugin, LitecontrolcenterPlu
 
 static gboolean litecontrolcenter_size_changed(XfcePanelPlugin *plugin, gint size, LitecontrolcenterPlugin *litecontrolcenter)
 {
-#ifdef HAS_PANEL_49
-   size /= xfce_panel_plugin_get_nrows(plugin);
-#endif
-   gtk_widget_set_size_request(GTK_WIDGET(litecontrolcenter->button), size, size);
-   return TRUE;
+  #ifdef HAS_PANEL_49
+  size /= xfce_panel_plugin_get_nrows(plugin);
+  #endif
+  gtk_widget_set_size_request(GTK_WIDGET(litecontrolcenter->button), size, size);
+  return TRUE;
 }
 
 
