@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Uncomment to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@ 
+
+binary-arch:
+	dh_prep
+	dh_installdirs
+	dh_install liblitecontrolcenter.so /usr/lib/*/xfce4/panel/plugins/
+	dh_install litecontrolcenter.desktop /usr/share/xfce4/panel/plugins/
+	dh_strip
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+
+binary : binary-arch
+
+
+

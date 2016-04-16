@@ -1,0 +1,14 @@
+language: c
+
+sudo: false
+
+compiler:
+  - gcc
+
+
+before_install:
+        - sudo apt-get update -qq
+        - sudo apt-get install -qq libgtk-3-dev pkg-config libxfce4util-dev \
+        - xfce4-dev-tools libxfce4ui-1-dev xfce4-panel-dev libxfconf-0-dev
+
+script: make
