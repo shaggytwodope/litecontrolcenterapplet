@@ -11,6 +11,6 @@ Vcs-Git: git://github.com/shaggytwodope/litecontrolcenterapplet.git
 
 Package: lite-controlcenter-applet
 Architecture: amd64 i386
-Depends: libc6, xfce4-panel
+Depends: ${shlibs:Depends}, xfce4-panel, libc6
 Description: Linux Lite Control Center applet for Xfce panel
  This is a simple applet to open a Control Center for Linux Lite.
