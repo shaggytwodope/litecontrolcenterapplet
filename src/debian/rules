@@ -10,7 +10,7 @@ binary-arch:
 	dh_prep
 	dh_installdirs
 	dh_install liblitecontrolcenter.so /usr/lib/*/xfce4/panel/plugins/
-	dh_install litecontrolcenter.desktop /usr/share/xfce4/panel/plugins/
+	dh_install lite-controlcenter.desktop /usr/share/xfce4/panel/plugins/
 	dh_strip
 	dh_compress
 	dh_fixperms
