@@ -9,4 +9,4 @@ clean:
 
 .PHONY: clean
 
-all: liblitecontrolcenter.so lite-controlcenter.desktop
+all: liblitecontrolcenter.so litecontrolcenter.desktop
