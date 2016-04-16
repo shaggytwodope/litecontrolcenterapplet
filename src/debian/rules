@@ -14,6 +14,7 @@ binary-arch:
 	dh_install debian/copyright /usr/share/doc/lite-controlcenter-applet
 	gzip -c --best debian/changelog >debian/changelog.Debian.gz
 	dh_install  debian/changelog.Debian.gz /usr/share/doc/lite-controlcenter-applet
+	rm debian/changelog.Debian.gz
 	dh_strip
 	dh_compress
 	dh_fixperms
