@@ -4,8 +4,8 @@
 * Distributed under terms of the GPL2 license.
 */
 
-#ifndef SRC_LITECC_H_
-#define SRC_LITECC_H_
+#ifndef SRC_HEADERS_LITECC_H_
+#define SRC_HEADERS_LITECC_H_
 
 G_BEGIN_DECLS
 
@@ -27,4 +27,4 @@ LccPlugin;
 G_END_DECLS
 
 
-#endif /* SRC_LITECC_H__ */
+#endif /* SRC_HEADERS_LITECC_H_ */
