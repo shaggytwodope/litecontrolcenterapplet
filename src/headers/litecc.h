@@ -4,8 +4,8 @@
 * Distributed under terms of the GPL2 license.
 */
 
-#ifndef __XFCE_LITECONTROLCENTER_PLUGIN_H__
-#define __XFCE_LITECONTROLCENTER_PLUGIN_H__
+#ifndef SRC_LITECC_H_
+#define SRC_LITECC_H_
 
 G_BEGIN_DECLS
 
@@ -13,8 +13,7 @@ G_BEGIN_DECLS
 #define DEFAULT_TOOLTIP_MESSAGE "Linux Lite Control Center"
 #define DEFAULT_RUN_COMMAND "lite-controlcenter"
 
-typedef struct _LitecontrolcenterPlugin
-{
+typedef struct _LccPlugin {
   XfcePanelPlugin *plugin;
 
   GtkWidget       *button;
@@ -22,10 +21,10 @@ typedef struct _LitecontrolcenterPlugin
 
   gchar           *icon_name;
 }
-LitecontrolcenterPlugin;
+LccPlugin;
 
 
 G_END_DECLS
 
 
-#endif /* !__XFCE_LITECONTROLCENTER_PLUGIN_H__ */
+#endif /* SRC_LITECC_H__ */
