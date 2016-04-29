@@ -14,12 +14,12 @@ G_BEGIN_DECLS
 #define DEFAULT_RUN_COMMAND "lite-controlcenter"
 
 typedef struct _LccPlugin {
-  XfcePanelPlugin *plugin;
+    XfcePanelPlugin *plugin;
 
-  GtkWidget       *button;
-  GtkWidget       *icon;
+    GtkWidget       *button;
+    GtkWidget       *icon;
 
-  gchar           *icon_name;
+    gchar           *icon_name;
 }
 LccPlugin;
 
