@@ -1,15 +1,17 @@
 language: c
-
 sudo: required
-
 compiler:
-  - gcc
-
-
+- gcc
 before_install:
-        - sudo apt-get update -qq
-        - sudo apt-get install -qq libgtk-3-dev pkg-config libxfce4util-dev
-        - sudo apt-get install -qq xfce4-dev-tools libxfce4ui-1-dev xfce4-panel-dev 
-        - sudo apt-get install -qq libxfconf-0-dev
-
+- sudo apt-get update -qq
+- sudo apt-get install -qq libgtk-3-dev pkg-config libxfce4util-dev
+- sudo apt-get install -qq xfce4-dev-tools libxfce4ui-1-dev xfce4-panel-dev
+- sudo apt-get install -qq libxfconf-0-dev
 script: cd src/ && make all
+deploy:
+  provider: releases
+  api_key:
+    secure: IC3IOHgyWgYGA/U+wA41dAGwMZjCyDzTeHfRHpxNAxXMhaCso7eFLZkUlPsbebLPTZHZSKUJlA9viJRKjTQDBl+BChpo9rnf4WoZgSULkacvIxB6g1ebTHBysp47G7VYUalxK/3OAkv9+WRNWKEIaorfS+zIFkXmb5rzOCYPedZzCdiclrAmzPQZldx79fXI85/6jJxiZkB3RgVcXRTuz8fF0Xm8kL/geHoRlAohcxVRypZHi2r9AH+Cv5HqSQya/ZwJLXIkZ9AwFamu4JBMkUXKlma+8k9HwrqqSTZ/tCU7fXRjYmuRauY6r8lbvzvcBRgG3HtwJ21/ZAK5zx9srno78N+kx+jqeo7ixidwdc6s1XhdWomGSW4aIvE6UQ/HEvgfPllHs8qQJz1NDrSLOhDgNmfwFPYNGuRojqfprKkmZ2lvhONCn4ZhFcqsk76d1qB9ThF8kCwg45E+waEhithKrU53ePZz4vULIWfC4Vmcgq/RNw1Wyb5girZ4u98/cAtiWUgtt/q9i8CorX6q+H3MZFabvQgyqYWn7SMtHwvPhbjFdZlCUFCTtQ6XvU3zygfx2TUnp82tfqu0cr28mL2OTVkZvCo5RL7BSpc3yieCjIwYMq3zmW0+b0xRzGAbCsYk/geZxVg3pP/hpkSIV6u11Xa5fPSLhis0ec1LRcU=
+  file: src/*.deb
+  on:
+    repo: shaggytwodope/litecontrolcenterapplet
