@@ -1,9 +1,9 @@
 PREFIX ?= /usr
 PACKAGES = libxfce4panel-1.0 gtk+-3.0
 TARGET = lite-controlcenter-applet
-version = 0.1
+version = 1.1
 
-liblitecontrolcenter.so:
+liblitecc:
 	gcc -s -Wall -shared -o $(TARGET).so -fPIC $(TARGET).c `pkg-config --cflags --libs $(PACKAGES)`
 
 deb:
@@ -17,7 +17,7 @@ deb:
 	rm debian/DEBIAN/changelog.Debian.gz
 	install -m 644 debian/DEBIAN/copyright debian/usr/share/doc/lite-controlcenter-applet
 	install $(TARGET).desktop debian/usr/share/xfce4/panel/plugins/
-	fakeroot dpkg-deb --build debian $(TARGET).deb
+	fakeroot dpkg-deb --build debian $(TARGET)_$(version).deb
 	rm -rf debian/usr
 
 
@@ -26,4 +26,4 @@ clean:
 
 .PHONY: clean
 
-all: liblitecontrolcenter.so litecontrolcenter.desktop
+all: liblitecc deb
