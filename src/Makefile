@@ -7,7 +7,7 @@ liblitecc:
 	gcc -s -Wall -shared -o $(TARGET).so -fPIC $(TARGET).c `pkg-config --cflags --libs $(PACKAGES)`
 
 deb:
-	sed "12s/.*/Version: $(version)/g" -i debian/DEBIAN/control
+	sed -i "/Version:/c\Version: $(version)" debian/DEBIAN/control
 	install -d debian/usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/
 	install -d debian/usr/share/xfce4/panel/plugins/
 	install -d debian/usr/share/doc/lite-controlcenter-applet

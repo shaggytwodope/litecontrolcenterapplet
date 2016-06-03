@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Johnathan Jenkins <twodopeshaggy@gmail.com>
 Homepage: http://github.com/shaggytwodope/litecontrolcenterapplet
 Package: lite-controlcenter-applet
-Version: 0.1
+Version: 1.1
 Architecture: amd64
 Depends: libc6, xfce4-panel, lite-controlcenter
 Description: Linux Lite Control Center applet for Xfce panel
