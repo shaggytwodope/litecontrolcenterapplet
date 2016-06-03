@@ -15,7 +15,7 @@
 #include <gtk/gtk.h>
 #include <libxfce4util/libxfce4util.h>
 #include <libxfce4panel/xfce-panel-plugin.h>
-#include "headers/litecc.h"
+#include "headers/lite-controlcenter-applet.h"
 
 
 #ifdef LIBXFCE4PANEL_CHECK_VERSION
